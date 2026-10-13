@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    @apply font-body bg-cream text-primary-800 antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+  .text-shadow-lg {
+    text-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+  }
+  .text-shadow-md {
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  }
+  .bg-hero-overlay {
+    background: linear-gradient(180deg, rgba(6,26,45,0.5) 0%, rgba(6,26,45,0.4) 40%, rgba(6,26,45,0.85) 100%);
+  }
+  .bg-section-overlay {
+    background: linear-gradient(180deg, rgba(6,26,45,0.7) 0%, rgba(6,26,45,0.8) 100%);
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #EEF3F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #0B3D6E;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #082B4C;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
