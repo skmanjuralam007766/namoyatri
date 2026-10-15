@@ -5,11 +5,19 @@ export function ScrollToTop() {
   const { pathname, hash } = useLocation();
 
   useEffect(() => {
+    let frame = 0;
+
     if (hash) {
-      document.querySelector(hash)?.scrollIntoView({ behavior: 'smooth' });
-      return;
+      // Wait until the destination route has committed its DOM before scrolling.
+      frame = window.requestAnimationFrame(() => {
+        const target = document.getElementById(hash.slice(1));
+        target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'auto' });
     }
-    window.scrollTo(0, 0);
+
+    return () => window.cancelAnimationFrame(frame);
   }, [pathname, hash]);
 
   return null;
