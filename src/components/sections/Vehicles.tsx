@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import {
   Users, Snowflake, Briefcase, UserCheck, IndianRupee,
   Eye, X, CalendarCheck, type LucideIcon,
@@ -189,13 +190,13 @@ export function Vehicles() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <a
-                    href="/contact"
+                  <Link
+                    to="/contact#booking"
                     className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-4 bg-accent text-white font-heading font-semibold uppercase tracking-wide text-sm rounded-lg hover:bg-accent-dark shadow-lg shadow-accent/30 transition-all"
                   >
                     <CalendarCheck className="w-5 h-5" />
                     Book This Vehicle
-                  </a>
+                  </Link>
                   <Button
                     variant="ghost"
                     size="lg"
