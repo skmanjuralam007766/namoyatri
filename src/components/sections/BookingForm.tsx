@@ -4,6 +4,7 @@ import { CheckCircle2, X, Home, Plus, Send } from 'lucide-react';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Reveal } from '@/components/ui/Motion';
 import { Link } from 'react-router-dom';
+import { CONTACT_INFO } from '@/data/content';
 
 const prefersReducedMotion =
   typeof window !== 'undefined' &&
@@ -87,6 +88,34 @@ export function BookingForm() {
     e.preventDefault();
     const valid = mode === 'quick' ? validateQuick() : validateDetailed();
     if (!valid) return;
+
+    const message = mode === 'quick'
+      ? [
+          '🚗 NEW TRAVEL REQUEST',
+          '',
+          `Customer Name: ${quick.name.trim()}`,
+          `Customer Phone: ${quick.phone.trim()}`,
+          `Service: ${quick.service}`,
+          `Message / Requirement: ${quick.message.trim() || 'Not provided'}`,
+        ].join('\n')
+      : [
+          '🚗 NEW VEHICLE BOOKING REQUEST',
+          '',
+          `Customer Name: ${detailed.fullName.trim()}`,
+          `Customer Phone: ${detailed.mobile.trim()}`,
+          `Email: ${detailed.email.trim()}`,
+          `Pickup Location: ${detailed.pickup.trim()}`,
+          `Destination: ${detailed.destination.trim()}`,
+          `Travel Date: ${detailed.travelDate}`,
+          `Return Date: ${detailed.returnDate || 'Not provided'}`,
+          `Passengers: ${detailed.passengers}`,
+          `Vehicle Type: ${detailed.vehicleType}`,
+          `Journey Type: ${detailed.journeyType}`,
+          `Special Requirements: ${detailed.requirements.trim() || 'None'}`,
+        ].join('\n');
+    const whatsappNumber = CONTACT_INFO.whatsapp.replace(/\D/g, '');
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
 
     const ref = `ATI-2026-${Math.floor(1000 + Math.random() * 9000)}`;
     setBookingRef(ref);
@@ -378,7 +407,7 @@ export function BookingForm() {
                 THANK YOU!
               </h2>
               <p className="text-primary-600 mb-4">
-                Your travel request has been received.
+                WhatsApp should open with your request. Tap Send there to deliver it to us.
               </p>
 
               <div className="inline-block px-6 py-3 bg-cream rounded-xl mb-4">

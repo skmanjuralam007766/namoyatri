@@ -296,7 +296,7 @@ export const FEATURES: Feature[] = [
 
 export const CONTACT_INFO = {
   phone: '+91 9084452543',
-  whatsapp: '+91 6395813702',
+  whatsapp: '+91 9641188657',
   email: 'rsaharawat700@gmail.com',
   address: 'Opposite Dandi Ashram, Shukaratal, Muzzaffarnagar, Uttar Pradesh, India',
 };

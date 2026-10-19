@@ -5,7 +5,7 @@ import {
   Users, Snowflake, Briefcase, UserCheck, IndianRupee,
   Eye, X, CalendarCheck, type LucideIcon,
 } from 'lucide-react';
-import { VEHICLES, type Vehicle } from '@/data/content';
+import { CONTACT_INFO, VEHICLES, type Vehicle } from '@/data/content';
 import { StaggerGroup, StaggerItem } from '@/components/ui/Motion';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Button } from '@/components/ui/Button';
@@ -94,6 +94,28 @@ const DETAIL_ICONS: Record<string, LucideIcon> = {
 
 export function Vehicles() {
   const [selected, setSelected] = useState<Vehicle | null>(null);
+
+  const vehicleBookingLink = (vehicle: Vehicle) => {
+    const message = [
+      '🚗 NEW VEHICLE BOOKING REQUEST',
+      '',
+      `Vehicle: ${vehicle.name.trim()}`,
+      `Price: ₹${vehicle.price.toLocaleString('en-IN')}/day`,
+      `Seating: ${vehicle.seats}`,
+      `AC: ${vehicle.ac ? 'Yes' : 'No'}`,
+      '',
+      'Customer Name: Please provide',
+      'Customer Phone: Please provide',
+      'Pickup Location: Please provide',
+      'Drop Location: Please provide',
+      'Travel Date: Please provide',
+      'Number of Days: Please provide',
+      '',
+      'Please confirm availability and the final fare.',
+    ].join('\n');
+    const whatsappNumber = CONTACT_INFO.whatsapp.replace(/\D/g, '');
+    return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+  };
 
   return (
     <section id="vehicles" className="py-20 sm:py-28 bg-cream-mist scroll-mt-20">
@@ -190,13 +212,15 @@ export function Vehicles() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <Link
-                    to="/contact#booking"
+                  <a
+                    href={vehicleBookingLink(selected)}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-4 bg-accent text-white font-heading font-semibold uppercase tracking-wide text-sm rounded-lg hover:bg-accent-dark shadow-lg shadow-accent/30 transition-all"
                   >
                     <CalendarCheck className="w-5 h-5" />
                     Book This Vehicle
-                  </Link>
+                  </a>
                   <Button
                     variant="ghost"
                     size="lg"
