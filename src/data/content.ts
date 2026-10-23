@@ -78,7 +78,7 @@ export const VEHICLES: Vehicle[] = [
   {
     id: 'tempo-12',
     name: 'Tempo Traveller 12 Seater',
-    image: 'https://images.pexels.com/photos/31880118/pexels-photo-31880118.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: 'https://buscdn.cardekho.com/in/force/traveller-3700/force-traveller-3700.jpg',
     seats: '12 Seats',
     ac: true,
     luggage: 'Large Boot',
@@ -89,7 +89,7 @@ export const VEHICLES: Vehicle[] = [
   {
     id: 'tempo-17',
     name: 'Tempo Traveller 17 Seater',
-    image: 'https://images.pexels.com/photos/31880118/pexels-photo-31880118.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: 'https://buscdn.cardekho.com/in/force/traveller-3700/force-traveller-3700.jpg',
     seats: '17 Seats',
     ac: true,
     luggage: 'Roof Carrier',
@@ -100,7 +100,7 @@ export const VEHICLES: Vehicle[] = [
   {
     id: 'tempo-20',
     name: 'Tempo Traveller 20 Seater',
-    image: 'https://images.pexels.com/photos/31880118/pexels-photo-31880118.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: 'https://buscdn.cardekho.com/in/force/traveller-3700/force-traveller-3700.jpg',
     seats: '20 Seats',
     ac: true,
     luggage: 'Roof Carrier',
@@ -111,7 +111,7 @@ export const VEHICLES: Vehicle[] = [
   {
     id: 'tempo-22',
     name: 'Tempo Traveller 22 Seater',
-    image: 'https://images.pexels.com/photos/31880118/pexels-photo-31880118.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: 'https://buscdn.cardekho.com/in/force/traveller-3700/force-traveller-3700.jpg',
     seats: '22 Seats',
     ac: true,
     luggage: 'Roof Carrier',
@@ -122,7 +122,7 @@ export const VEHICLES: Vehicle[] = [
   {
     id: 'tempo-25',
     name: 'Tempo Traveller 25 Seater',
-    image: 'https://images.pexels.com/photos/31880118/pexels-photo-31880118.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: 'https://buscdn.cardekho.com/in/force/traveller-3700/force-traveller-3700.jpg',
     seats: '25 Seats',
     ac: true,
     luggage: 'Roof Carrier',
