@@ -53,7 +53,7 @@ export function FinalCTA() {
               Book Your Journey
             </Link>
             <a
-              href="tel:+919876543210"
+              href="tel:+916395813702"
               className="inline-flex items-center gap-2 px-9 py-4 border-2 border-white/40 text-white font-heading font-semibold uppercase tracking-wide text-sm rounded-lg hover:bg-white hover:text-primary-800 backdrop-blur-sm transition-all duration-300"
             >
               <Phone className="w-5 h-5" />

@@ -104,7 +104,7 @@ export function Navbar() {
           {/* Right CTAs */}
           <div className="hidden lg:flex items-center gap-3">
             <ButtonAnchor
-              href="tel:+919876543210"
+              href="tel:+916395813702"
               variant={transparent ? 'outline' : 'ghost'}
               size="sm"
             >
@@ -187,7 +187,7 @@ export function Navbar() {
 
               <div className="p-5 border-t border-gray-100 space-y-3">
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+916395813702"
                   className="flex items-center justify-center gap-2 w-full px-6 py-3.5 text-sm font-heading font-semibold uppercase tracking-wide rounded-lg border-2 border-primary/20 text-primary-700 hover:bg-primary-50 transition-colors"
                 >
                   <Phone className="w-4 h-4" />
