@@ -225,6 +225,22 @@ export const DESTINATIONS: Destination[] = [
     description: 'Ancient sacred forest mentioned in the Puranas, home to numerous temples and spiritual sites.',
     days: '2 Days',
   },
+  {
+    id: 'kurukshetra',
+    name: 'Kurukshetra',
+    location: 'Haryana',
+    image: 'https://static.toiimg.com/thumb/msid-50481522,width=1200,height=900/50481522.jpg',
+    description: 'A sacred city known for the Mahabharata and the Bhagavad Gita, with historic temples and pilgrimage sites.',
+    days: '2 Days',
+  },
+  {
+    id: 'shukratal',
+    name: 'Shukratal',
+    location: 'Muzaffarnagar, Uttar Pradesh',
+    image: 'https://hblimg.mmtcdn.com/content/hubble/img/ttd_images/mmt/activities/m_Muzaffarnagar_Shukratal-1_l_459_613.jpg',
+    description: 'A serene pilgrimage town on the banks of the Ganges, famed for its ancient banyan tree and sacred temples.',
+    days: '2 Days',
+  },
 ];
 
 export interface Service {
