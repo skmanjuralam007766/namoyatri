@@ -32,7 +32,7 @@ export function AboutSection() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src={IMAGES.about}
-                  alt="Family enjoying a road trip with ALL INDIA TOURS"
+                  alt="Family enjoying a road trip with Namo Yatri"
                   className="w-full h-112.5 object-cover"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-navy/30 to-transparent" />
@@ -55,14 +55,14 @@ export function AboutSection() {
           {/* Content */}
           <div>
             <SectionHeading
-              title="About All India Tours"
+              title="About Namo Yatri"
               subtitle="Travel With Confidence"
               align="left"
             />
 
             <Reveal delay={0.1}>
               <p className="mt-6 text-primary-600 leading-relaxed">
-                ALL INDIA TOURS is focused on providing comfortable, reliable and memorable
+                Namo Yatri is focused on providing comfortable, reliable and memorable
                 road travel experiences. From quick city rides to complete Himalayan expeditions,
                 we ensure every journey is safe, comfortable and unforgettable.
               </p>

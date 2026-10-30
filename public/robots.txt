@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://namoyatri.in/sitemap.xml

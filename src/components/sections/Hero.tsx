@@ -85,9 +85,9 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="font-heading text-4xl sm:text-6xl lg:text-7xl font-black text-white text-shadow-lg leading-[1.05]"
           >
-            YOUR JOURNEY,
+            NAMO YATRI
             <br />
-            <span className="text-accent">OUR RESPONSIBILITY.</span>
+            <span className="text-accent">YOUR JOURNEY, OUR RESPONSIBILITY.</span>
           </motion.h1>
 
           <motion.p
