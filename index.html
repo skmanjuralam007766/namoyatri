@@ -3,30 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Title & Description -->
+    <title>Namo Yatri - Official Website | Taxi &amp; Travel Booking</title>
+    <meta name="description" content="Book taxi services, car rentals, and outstation trips with Namo Yatri (namoyatri.in). Fast, reliable, and convenient travel solutions across India." />
+    <meta name="keywords" content="namoyatri, namoyatri.in, namo yatri, namo yatri travel, taxi booking, car rental, outstation cabs" />
+    <meta name="author" content="Namo Yatri" />
     <meta name="robots" content="index, follow" />
-    <meta property="og:site_name" content="Namo Yatri" />
-    <meta property="og:title" content="Namo Yatri | Official Website" />
-    <meta property="og:description" content="Book taxi services, car rentals and travel experiences with Namo Yatri." />
-    <meta property="og:url" content="https://namoyatri.in/" />
-    <meta property="og:type" content="website" />
     <link rel="canonical" href="https://namoyatri.in/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Namo Yatri" />
+    <meta property="og:title" content="Namo Yatri - Official Website | Travel &amp; Taxi Booking" />
+    <meta property="og:description" content="Book taxi services, car rentals, and outstation trips with Namo Yatri (namoyatri.in)." />
+    <meta property="og:url" content="https://namoyatri.in/" />
+    <meta property="og:image" content="https://namoyatri.in/og-image.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Namo Yatri - Official Website | Travel &amp; Taxi Booking" />
+    <meta name="twitter:description" content="Book taxi services, car rentals, and outstation trips with Namo Yatri (namoyatri.in)." />
+    <meta name="twitter:image" content="https://namoyatri.in/og-image.png" />
+
+    <!-- Unified Structured Data (Schema.org JSON-LD) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Namo Yatri",
-        "alternateName": ["Namo Yatri Travel", "namoyatri.in"],
-        "url": "https://namoyatri.in/"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://namoyatri.in/#website",
+            "url": "https://namoyatri.in/",
+            "name": "Namo Yatri",
+            "alternateName": ["Namo Yatri Travel", "namoyatri.in", "NamoYatri"],
+            "publisher": {
+              "@id": "https://namoyatri.in/#organization"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://namoyatri.in/#organization",
+            "name": "Namo Yatri",
+            "url": "https://namoyatri.in/",
+            "logo": "https://namoyatri.in/logo.png",
+            "sameAs": [
+              "https://www.facebook.com/namoyatri",
+              "https://www.instagram.com/namoyatri",
+              "https://twitter.com/namoyatri"
+            ]
+          }
+        ]
       }
     </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Namo Yatri",
-        "url": "https://namoyatri.in/"
-      }
-    </script>    <!-- Google Analytics - Namo Yatri -->
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P7RK1BC3BZ"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -34,11 +65,11 @@
       gtag('js', new Date());
       gtag('config', 'G-P7RK1BC3BZ');
     </script>
-    <title>Namo Yatri | Official Taxi &amp; Travel Booking Website</title>
-    <meta name="description" content="Welcome to Namo Yatri, your travel and taxi booking partner. Explore car rentals, local taxi services, outstation trips and holiday destinations." />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div id="root"></div>
