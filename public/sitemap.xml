@@ -6,11 +6,40 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  <!-- Add additional route URLs here as you create more pages -->
-  <url><loc>https://namoyatri.in/cars</loc></url>
-  <url><loc>https://namoyatri.in/tours</loc></url>
-  <url><loc>https://namoyatri.in/yatra</loc></url>
-  <url><loc>https://namoyatri.in/services</loc></url>
-  <url><loc>https://namoyatri.in/about</loc></url>
-  <url><loc>https://namoyatri.in/contact</loc></url>
+  <url>
+    <loc>https://namoyatri.in/cars</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://namoyatri.in/tours</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://namoyatri.in/yatra</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://namoyatri.in/services</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://namoyatri.in/about</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://namoyatri.in/contact</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
