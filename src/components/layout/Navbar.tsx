@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Phone, CalendarCheck, MapPin } from 'lucide-react';
+import { Menu, X, Phone, CalendarCheck } from 'lucide-react';
 import { ButtonAnchor } from '@/components/ui/Button';
 
 const NAV_LINKS = [
@@ -53,18 +53,12 @@ export function Navbar() {
       >
         <nav className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2.5 shrink-0">
-            <div className={`w-10 h-10 rounded-lg flex items-center justify-center transition-colors duration-300 ${transparent ? 'bg-white/10 backdrop-blur' : 'bg-primary'}`}>
-              <MapPin className={`w-5 h-5 ${transparent ? 'text-white' : 'text-accent'}`} />
-            </div>
-            <div className="leading-none">
-              <span className={`block font-heading text-lg font-bold tracking-tight transition-colors duration-300 ${transparent ? 'text-white' : 'text-primary-800'}`}>
-                NAMO
-              </span>
-              <span className={`block font-heading text-lg font-bold tracking-tight transition-colors duration-300 ${transparent ? 'text-accent' : 'text-accent'}`}>
-                YATRI
-              </span>
-            </div>
+          <Link to="/" className="flex items-center shrink-0" aria-label="Namo Yatri home">
+            <img
+              src="/logo.png"
+              alt="Namo Yatri — Your journey, our responsibility"
+              className="h-12 w-12 sm:h-14 sm:w-14 rounded-full object-cover shadow-md"
+            />
           </Link>
 
           {/* Desktop nav */}
