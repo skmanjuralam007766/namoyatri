@@ -55,7 +55,7 @@ export function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center shrink-0" aria-label="Namo Yatri home">
             <img
-              src="/logo.png"
+              src="/logo.png?v=3"
               alt="Namo Yatri — Your journey, our responsibility"
               className="h-12 w-12 sm:h-14 sm:w-14 rounded-full object-cover shadow-md"
             />
